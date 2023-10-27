@@ -1,0 +1,4 @@
+BlinkStick==1.2.0
+psutil==5.9.6
+pyusb==1.2.1
+pywinusb==0.4.2
