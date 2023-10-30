@@ -57,7 +57,8 @@ Description=sh-blinkstick service
 
 [Service]
 # Command to execute when the service is started
-ExecStart=/home/samih/blinkstick/bin/python /home/samih/blinkstick/sh-blinkstick/cpu-usage.py
+ExecStart=/home/user/blinkstick/bin/python /home/user/blinkstick/sh-blinkstick/cpu-usage.py
+Environment=PYTHONUNBUFFERED=1
 
 [Install]
 WantedBy=default.target
