@@ -42,6 +42,8 @@ run
 python blinkstick/sh-blinstick/cpu-usage.py 
 ```
 
+## Running as systemd service
+
 For running as a service and autostarting refer to:
 [this](https://github.com/torfsen/python-systemd-tutorial)
 and
