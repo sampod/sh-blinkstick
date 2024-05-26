@@ -72,3 +72,8 @@ If all goes well it should start with:
 ```
 systemctl --user start sh-blinkstick.service
 ```
+
+For staring it at reboot:
+```
+systemctl --user enable sh-blinkstick.service
+```
