@@ -63,3 +63,12 @@ Environment=PYTHONUNBUFFERED=1
 [Install]
 WantedBy=default.target
 ```
+
+### Short howto:
+
+Check your paths. 
+Create file `~/.config/systemd/user/sh-blinkstick.service` 
+If all goes well it should start with: 
+```
+systemctl --user start sh-blinkstick.service
+```
