@@ -47,7 +47,17 @@ python blinkstick/sh-blinstick/cpu-usage.py
 For running as a service and autostarting refer to:
 [this](https://github.com/torfsen/python-systemd-tutorial)
 and
-[this](https://www.unixsysadmin.com/systemd-user-services/)
+[this](https://www.unixsysadmin.com/systemd-user-services/).
+
+Also if you want to use blinkstick from user serivice you'll need to add the udev-rule to allow that:
+```
+sudo blinkstick --add-udev-rule
+```
+or
+```
+echo "SUBSYSTEM==\"usb\", ATTR{idVendor}==\"20a0\", ATTR{idProduct}==\"41e5\", MODE:=\"0666\"" | sudo tee /etc/udev/rules.d/85-blinkstick.rules
+```
+[source](https://pypi.org/project/BlinkStick/)
 
 Example systemd unit file: 
 
